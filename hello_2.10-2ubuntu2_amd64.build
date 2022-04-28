@@ -1,0 +1,64 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: 資訊: 源碼套件 hello
+dpkg-buildpackage: 資訊: 源碼版本 2.10-2ubuntu2
+dpkg-buildpackage: 資訊: source distribution eoan
+dpkg-buildpackage: 資訊: 源碼變更者： Steve Langasek <steve.langasek@ubuntu.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: 資訊: 主機架構 amd64
+ debian/rules clean
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: 進入目錄「/home/boiway/hello/hello-2.10」
+[ ! -f Makefile ] || /usr/bin/make distclean
+make[2]: 進入目錄「/home/boiway/hello/hello-2.10」
+Making distclean in po
+make[3]: Entering directory '/home/boiway/hello/hello-2.10/po'
+rm -f *.insert-header
+rm -f remove-potcdate.sed
+rm -f stamp-poT
+rm -f core core.* hello.po hello.1po hello.2po *.new.po
+rm -fr *.o
+rm -f Makefile Makefile.in POTFILES *.mo
+make[3]: Leaving directory '/home/boiway/hello/hello-2.10/po'
+make[3]: Entering directory '/home/boiway/hello/hello-2.10'
+test -z "doc/hello.dvi doc/hello.pdf doc/hello.ps doc/hello.html" \
+|| rm -rf doc/hello.dvi doc/hello.pdf doc/hello.ps doc/hello.html
+test -z "hello" || rm -f hello
+test -z " lib/configmake.h lib/configmake.h-t lib/charset.alias lib/ref-add.sed lib/ref-del.sed" || rm -f  lib/configmake.h lib/configmake.h-t lib/charset.alias lib/ref-add.sed lib/ref-del.sed
+test -z "lib/libhello.a" || rm -f lib/libhello.a
+rm -rf doc/hello.t2d doc/hello.t2p
+rm -f *.o
+rm -f lib/*.o
+rm -f src/*.o
+test -z "lib/core lib/*.stackdump lib/errno.h lib/errno.h-t lib/getopt.h lib/getopt.h-t lib/arg-nonnull.h lib/arg-nonnull.h-t lib/c++defs.h lib/c++defs.h-t lib/warn-on-use.h lib/warn-on-use.h-t lib/stdbool.h lib/stdbool.h-t lib/stddef.h lib/stddef.h-t lib/stdio.h lib/stdio.h-t lib/stdlib.h lib/stdlib.h-t lib/string.h lib/string.h-t lib/sys/types.h lib/sys/types.h-t lib/unistd.h lib/unistd.h-t lib/wchar.h lib/wchar.h-t lib/wctype.h lib/wctype.h-t" || rm -f lib/core lib/*.stackdump lib/errno.h lib/errno.h-t lib/getopt.h lib/getopt.h-t lib/arg-nonnull.h lib/arg-nonnull.h-t lib/c++defs.h lib/c++defs.h-t lib/warn-on-use.h lib/warn-on-use.h-t lib/stdbool.h lib/stdbool.h-t lib/stddef.h lib/stddef.h-t lib/stdio.h lib/stdio.h-t lib/stdlib.h lib/stdlib.h-t lib/string.h lib/string.h-t lib/sys/types.h lib/sys/types.h-t lib/unistd.h lib/unistd.h-t lib/wchar.h lib/wchar.h-t lib/wctype.h lib/wctype.h-t
+test -z "tests/greeting-1.log tests/greeting-2.log tests/hello-1.log tests/last-1.log tests/traditional-1.log" || rm -f tests/greeting-1.log tests/greeting-2.log tests/hello-1.log tests/last-1.log tests/traditional-1.log
+test -z "tests/greeting-1.trs tests/greeting-2.trs tests/hello-1.trs tests/last-1.trs tests/traditional-1.trs" || rm -f tests/greeting-1.trs tests/greeting-2.trs tests/hello-1.trs tests/last-1.trs tests/traditional-1.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f vti.tmp
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f doc/.dirstamp
+rm -f lib/.deps/.dirstamp
+rm -f lib/.dirstamp
+rm -f src/.deps/.dirstamp
+rm -f src/.dirstamp
+rm -f config.h stamp-h1
+test '.' = . || rm -f ./GNUmakefile
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+make[3]: Leaving directory '/home/boiway/hello/hello-2.10'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -rf lib/.deps src/.deps
+rm -f Makefile
+make[2]: 離開目錄「/home/boiway/hello/hello-2.10」
+make[1]: 離開目錄「/home/boiway/hello/hello-2.10」
+   dh_clean
+ dpkg-source -b .
+dpkg-source: 資訊: using source format '3.0 (quilt)'
+dpkg-source: 資訊: building hello using existing ./hello_2.10.orig.tar.gz
+dpkg-source: 資訊: local changes detected, the modified files are:
+ hello-2.10/testing.sh
+dpkg-source: 錯誤: aborting due to unexpected upstream changes, see /tmp/hello_2.10-2ubuntu2.diff.CxgAoh
+dpkg-source: 資訊: you can integrate the local changes with dpkg-source --commit
+dpkg-buildpackage: 錯誤: dpkg-source -b . subprocess returned exit status 2

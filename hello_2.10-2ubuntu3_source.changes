@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Thu, 28 Apr 2022 01:51:29 +0800
+Source: hello
+Architecture: source
+Version: 2.10-2ubuntu3
+Distribution: focal
+Urgency: medium
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Alucard Lu <alumincan@gmail.com>
+Changes:
+ hello (2.10-2ubuntu3) focal; urgency=medium
+ .
+   * No-change rebuild for testing
+Checksums-Sha1:
+ f286cc635e1b09064d2e9d5cea8caff44446739d 927 hello_2.10-2ubuntu3.dsc
+ 2c0996ae8a21b97214dd6168ea055daf745c85f3 7504 hello_2.10-2ubuntu3.debian.tar.xz
+ 67ce5f993ccd7890352205e8b6509ce485181b52 5349 hello_2.10-2ubuntu3_source.buildinfo
+Checksums-Sha256:
+ a10f31835c57131346d24781c0756645b6ccecba8cf7fd22463ef5484eed7465 927 hello_2.10-2ubuntu3.dsc
+ 563b5b5d2b29534b7b3d08812405db652af256a727f59295e4f372db3a2d9bbf 7504 hello_2.10-2ubuntu3.debian.tar.xz
+ d9a14f9c237cb9fe796232ae658506bacdf4cb1464a3020af21b89ed4f3fde59 5349 hello_2.10-2ubuntu3_source.buildinfo
+Files:
+ e131ed7fb74bcfcf68196e8a9d027aa7 927 devel optional hello_2.10-2ubuntu3.dsc
+ f393ada59099cf1fcfa49d3f90d7c83d 7504 devel optional hello_2.10-2ubuntu3.debian.tar.xz
+ f7b50095e069d66b6489b3ec6b72c49c 5349 devel optional hello_2.10-2ubuntu3_source.buildinfo
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
